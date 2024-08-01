@@ -1,0 +1,184 @@
+body {
+  background: #33334d;
+  color: #222;
+  line-height: normal;
+  font-size: 32px;
+  font-family: sans-serif;
+
+}
+
+header {
+  position: fixed;
+  height: 150px;
+  top: 0px;
+  font-size: xx-large;
+  left: 0px;
+  color: white; 
+  z-index: 0;
+  background-color: rgb(66, 0, 22);
+  width: 100%;
+}
+
+h1 {
+  text-align: left;
+  margin-left: 50px;
+  max-width:57%;
+  color: #ffffff50;
+  margin-top: 200px;
+  float:left;
+  border: 5px solid #fcff52b2;
+  border-radius: 20px;
+
+}
+
+.image-h1 {
+  margin-top: 200px;
+  margin-left: 50px;
+  border: 5px solid #fcff52b2;
+  display: inline-flex;
+  border-radius: 20px;
+}
+
+.image-h1-2 {
+  margin-top: 35px;
+  margin-left: 50px;
+  border: 5px solid #fcff52b2;
+  display: inline-flex;
+  border-radius: 20px;
+}
+
+h2 {
+  margin-top: 100px;
+  margin-left: 50px;
+  border: 5px solid #FFF;
+}
+
+.image-h2 {
+  float: left;
+}
+
+
+footer {
+  background-color: #000000;
+  margin-top: auto;
+  margin-bottom: -10px;
+  width: 99%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin-top: 20px;
+    left: 50px;
+    position: fixed;
+  }
+
+
+.background { /* Pour la video en fond */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    width: auto;
+    height: auto;
+    z-index: -10; /* à l'arrière de tout */
+}
+
+
+/* C'est le départ pour le menu drop down */
+* {
+  box-sizing: border-box;
+}
+
+a, a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100px;
+  background: #F0C27B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0 0px 9px 4px rgba(0, 0, 0, .1), 0 -5px 2px 2px rgba(0, 0, 0, .1);
+  z-index: 1000;
+  min-width: 580px;
+  
+}
+
+nav .links {
+  float: right;
+  margin-right: 30px;
+  position: relative;
+}
+nav .links li {
+  list-style: none;
+  position: relative;
+  margin: 10px;
+  display: inline-block;
+}
+nav .links li > a {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 30px;
+  height: 30px;
+}
+nav .links li > a:hover {
+  color: #ffffff;
+  background: #33334d;
+  border-radius: 5px;
+}
+
+nav .links li ul {
+  position: absolute;
+  left: -50px;
+  margin: 0;
+  background: #313131b4;
+  border-radius: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+  display: none;
+  text-align: center;
+  max-width: 250px;
+}
+nav .links li ul > li {
+  clear: both;
+  list-style: none;
+  display: block;
+  padding: 0 10px;
+  margin: 20px;
+  width: 100%;
+}
+nav .links li ul > li:hover {
+  background: #9494b8;
+  border-radius: 20px;
+}
+nav .links li ul > li:hover > a {
+  background: #9494b8;
+  color: #fff;
+}
+nav .links li:hover > .drop {
+  display: block;
+  animation: fadeInRight 0.3s ease;
+  -webkit-animation: fadeInRight 0.3s ease;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+ }
+  100% {
+    opacity: 1;
+    transform: none;
+ }
+}
+
+/* Fin du menu Drop-down */
