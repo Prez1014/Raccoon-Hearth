@@ -1,70 +1,82 @@
 <!doctype html>
-<link rel="stylesheet" href="body.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Raccoon Hearth</title>
-<link rel="icon" type="image/png" href="images/racc_ico.png">
+<head> <link rel="stylesheet" href="body.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raccoon Hearth</title>
+  <link rel="icon" type="image/png" href="images/racc_ico.png">
+  
 <div class="background">
-    <video autoplay="" muted="" loop="" src="videos/background.mp4"></video>
-</div> 
+      <div id="vanta-birds""></div>
+      <!--<video autoplay="" muted="" loop="" src="videos/background.mp4"></video> -->
+  </div> 
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <!-- Background Vantajs-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+</head>
 
 
 <body>
-    <!-- Ceci est le départ du menu drop-down-->
+  <div id="vanta-birds""></div>
+  <div id="SlideToggle">
+    <img src="images/menu-burger.png" height="30" >
+  </div>
+
     <nav id="navigation">
         <div class="image-container"> 
-            <a href="youtube.com">
-            <img src="images/racc_hearth2.gif" height="150" align="left">
+            <a href="Main.html">
+            <img src="images/racc_hearth.gif" height="150" align="left">
             </a>
         </div>
-        <ul class="links">
-          <li><a href="https://www.youtube.com/">Youtube</a></li>
-  
-          <li class="dropdown"><a href="#" class="trigger-drop">Travaux <i class="arrow"></i></a>
-            <ul class="drop">
-              <li><a href="https://drive.google.com/drive/folders/1lKpVfBxxAaml01ezLiwRd96qz-xKjaZg?usp=drive_link">Art</a></li>
-              <li><a href="https://github.com/Prez1014/Raccoon-Hearth">Github</a></li>
-              <li><a href="https://www.youtube.com/@Raccoonard/videos">Vidéos</a></li>
-              <li><a href="https://open.spotify.com/embed/playlist/7BeR62q9zyNjPuN8C6bdJi?">Playlist Spotify</a></li>
-            </ul>
-          </li>
-          
-          <li class="dropdown"><a href="#" class="trigger-drop">Contacts<i class="arrow"></i></a>
-            <ul class="drop">
-              <li><a href="mailto: beauvarlet.matteo@gmail.com">Email</a></li>
-              <li><a href="#">:)</a></li>
-            </ul>
-          </li>
-        </ul>
+
+        </div>
       </nav>
 
-
-      <h1> 
-        Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. 
-        Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy.
-        Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. 
-      </h1>
-
-      <div class="image-h1">
-        <img src="images/image-h1.jpg" height="">
-      </div>
-      <div class="image-h1-2">
-        <img src="images/Raccoon-h1.jpg" height="">
-      </div>
-
-        <!-- Il faut mettre un diviseur ici :) -->
-
-      <h2>
-        <div class="image-h2">
-          <img src="images/raccoon-h2.png" height="300">
+      <h1>
+        <div class="image-h1">
+          <img src="images/rat-breakdance.gif" height="100">
         </div>
         Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. 
         Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. 
         Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. 
         Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. 
-      </h2>
+      </h1>
+      <h1>
+        <div class="image-h1">
+          <img src="images/rat-breakdance.gif" height="100">
+        </div>
+        Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. 
+        Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. 
+        Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. 
+        Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. Crazy? I was crazy once, they locked me in a room, a rubber room, a rubber room with rats and rats make me crazy. 
+      </h1>
       
 <footer> Il faut que je mette les liens comme les contacts et autres </footer>
+
+<script>
+  VANTA.BIRDS({
+    el: "#vanta-birds",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 4000,
+    minWidth: 4000,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    backgroundColor: 0x1225,
+    color1: 0xebdc48,
+    color2: 0x90f,
+    colorMode: "lerp",
+    birdSize: 0.50,
+    wingSpan: 10.00,
+    speedLimit: 1.00,
+    separation: 100.00,
+    alignment: 1.00,
+    cohesion: 100.00
+  })
+</script>
 
 </body>
 
